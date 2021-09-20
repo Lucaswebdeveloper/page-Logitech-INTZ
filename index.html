@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+    .__container__ {
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #fff;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .__main__ {
+      max-width: 1150px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto 0;
+
+      font-size: 0;
+    }
+
+   
+    .__banner-btn__ img {
+      max-width: 1280px;
+      height: auto;
+    }
+    .__banner-atletic__ img {
+      max-width: 1280px;
+      height: auto;
+    }
+
+    .banner-img{
+        width: 100%;
+        height:  auto;
+    }
+    .__banner__top{
+        width: 100%;
+        height:  auto;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    <!---->
+    .__banner-atletic__ {
+      width: 1150px;
+      height: 670px;
+    }
+      
+    .-carousel-container- {
+      width: 1150x;
+      height: auto;
+      position: relative;
+      margin: 0 auto;
+    }
+    .___navigation- .prev {
+      position: absolute;
+      z-index: 10;
+      font-size: 25px;
+      top: 80%;
+      left: 10px;
+      font-weight: 700;
+      transition: 1s;
+
+      
+    }
+    .___navigation- .next {
+      right: 10px;
+      position: absolute;
+      font-size: 25px;
+      z-index: 10;
+      top: 80%;
+      transition: 1s;
+    }
+    .___navigation- .nav-btn {
+      background: rgba(255, 255, 255, 0.55);
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      margin-top: 320px;
+    }
+    .___navigation- .nav-btn:hover {
+      background: white;
+      
+    }
+
+    .___carousel- {
+
+      transition: all 0.3s ease;
+    }
+    .___carousel- img {
+      width: 100%;
+      transition: all 0.3s ease;
+    
+    }
+
+    .item {
+      position: absolute;
+      display: none;
+    }
+
+    .main {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .video-INTZ{
+      width: 100%;
+      height: 315px;
+      margin: 0 auto;
+
+    }
+  
+    .video-desktop-intz{
+      width:1150px;
+      height:315px;
+     
+    }
+
+
+    <!---->
+
+
+
+
+
+    
+    .__banner-txt__ {
+      width: 1150px;
+      height: 200px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-size: 1rem;
+    }
+    .__banner-txt__ strong {
+      max-width: 600px;
+      text-align: center;
+    }
+    .__logotipo__box__ {
+      width: 1150px;
+      height: 300px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .__logo-footer__ {
+      width: 1150px;
+      height: auto;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .__logo__ {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .__logo__natus__ {
+      width: 120px;
+      height: 100px;
+    }
+
+    .__logo__intz {
+      width: 150px;
+      height: 100px;
+    }
+    .__logo__star__ {
+      width: 120px;
+      height: 120px;
+    }
+    .__logo__sm__ {
+      width: 150px;
+      height: 120px;
+    }
+    .__logo__gs__ {
+      width: 130px;
+      height: 140px;
+    }
+    .__logo__logitech__g {
+      width: 150px;
+      height: 80px;
+      margin-bottom: 50px;
+    }
+
+    .__footer-text__ {
+      width: 700px;
+      height: 100px;
+      text-align: center;
+    }
+    .__footer-text__ span {
+      font-size: 0.8rem;
+    }
+    .__footer__footer__ {
+      margin-top: 100px;
+    }
+    .__footer__ {
+      width: 1150px;
+      height: 30px;
+      background-color: #fff;
+      margin-top: 30px;
+    }
+    .btn-mobile{
+      display: none;
+    }
+    .banner-kit-desk{
+      display: flex;
+    }
+    .banner-kit-mobile{
+      display: none;
+    }
+    .img-danviet-mobile{
+      display:none
+    }
+    .img-minanda-mobile{
+      display: none;
+    }
+    
+
+    @media only screen and (min-width:640px) and (max-width:1000px){
+       
+      
+     
+       .__banner__top{
+         width: 640px;
+         height: auto;
+       }
+
+      .banner-img{
+          display: none;
+        }
+
+      .btn-mobile{
+          display: block;
+          width: 640px;
+          height: auto;
+          
+        }
+        .banner-kit-desk{
+          display: none;
+        }
+        .banner-kit-mobile{
+          display: flex;
+        }
+        .video-desktop-intz{
+          width:640px;
+           height:315px;
+     
+    }
+       
+
+        .-carousel-container-{
+          width: 100%;
+        }
+        .img-danviet-mobile{
+        display:flex
+        }
+        .banner-danviet{
+          display: none;
+        }
+        .banner-miranda{
+          display: none;
+        }
+        .img-minanda-mobile{
+          display: flex;
+        }
+        .__banner-atletic__ {
+          width: 640px;
+          height: auto;
+         }
+         .__banner-txt__{
+            width: 640px;
+            height: 200px;
+            margin-top: 640px;
+           
+         }
+         .__banner-txt__ strong {
+           font-size: 18px;
+           max-width: 500px;
+           text-align: center;
+         }
+         .__logotipo__box__{
+           width: 640px;
+           height: auto;
+         }
+         .__logo-footer__{
+           width: 640px;
+         }
+         .__logo__{
+           width: 120px;
+           height: 100px;
+           margin: 5px;
+         }
+         .__footer-text__ {
+            width: 640px;
+    
+          }
+          .__footer__{
+            width: 640px;
+           
+          }
+        
+        
+        
+    }
+    @media only screen and (min-width:320px) and (max-width:640px){
+          .banner-img{
+            display: none;
+          }
+          .btn-mobile{
+            display: flex;
+            width: 360px;
+          }
+          .banner-kit-desk{
+            display: none;
+          }
+          .__banner-btn__{
+             width: 360px;
+             height: auto;
+          }
+          .banner-kit-mobile{
+            display: block;
+            width: 360px;
+            height: 300px;
+       
+            font-size: 0;
+
+          
+          }
+          .banner-danviet{
+            display: none;
+          }
+          .banner-miranda{
+            display: none;
+          }
+          .img-danviet-mobile{
+            display: block;
+          }
+          .img-minanda-mobile{
+            display: block;
+          }
+
+      
+          .video-desktop-intz{
+           width:360px;
+           height:315px;
+     
+    }
+
+
+          .___navigation- .nav-btn {
+            margin-top: 140px;
+          }
+          .__banner-atletic__ {
+          width: 360px;
+          height: 200px;
+         }
+         .__banner-txt__{
+           width: 360px;
+           margin-top: 150px;
+         }
+         .__banner-txt__ strong{
+            padding: 5px;
+         }
+         .__logotipo__box__{
+           width: 360px;
+         }
+         .__logo-footer__{
+           width: 360px;
+         }
+         .__logo__{
+           width: 360px;
+           height: auto;
+         }
+         .__logo__intz{
+           width: 50px;
+           height: auto;
+         }
+         .__logo__natus__{
+           width: 50px;
+           height: auto;
+         }
+         .__logo__star__{
+           width: 50px;
+           height: auto;
+         }
+         .__logo__sm__{
+           width: 50px;
+           height: auto;
+         }
+         .__logo__gs__{
+           width: 50px;
+           height: auto;
+         }
+         .__logo__logitech__g{
+           width: 100px;
+           height: auto;
+         }
+         .__footer-text__{
+           width: 360px;
+           height: auto;
+         }
+         .__footer__{
+           width: 360px;
+         
+         }
+        
+        
+        
+          
+          
+    }
+
+
+
+  </style>
+
+  
+  <body>
+    <div class="__container__">
+      <div class="__main__">
+        <div class="__banner__top">
+          <img class="banner-img" src="https://www.logitechstore.com.br/media/interface/files/banner-intz.jpg" alt="" />
+          <img class="btn-mobile" src="https://www.logitechstore.com.br/media/interface/files/banner-top-mobile.png" alt="">
+        </div>
+        <div class="__banner-btn__">
+         <a href="https://www.logitechstore.com.br/gaming/play-to-win?utm_source=INTZ-logitech-g&utm_medium=crm-assets&utm_campaign=INTZ-logitech-g"><img class="banner-kit-desk" src="https://www.logitechstore.com.br/media/interface/files/banner-intz-2.jpg" alt="linha Pro Series" /></a> 
+         <a href="https://www.logitechstore.com.br/gaming/play-to-win?utm_source=INTZ-logitech-&utm_medium=crm-assets&utm_campaign=INTZ-logitech-g"> <img class="banner-kit-mobile" src="https://www.logitechstore.com.br/media/interface/files/banner-kit-mobile.png" alt="linha Pro Series"></a>
+         
+        </div>
+        <div class="video-INTZ">
+
+          <iframe class="video-desktop-intz"
+          max-width="1150" 
+          height="315" 
+          src="https://www.youtube.com/embed/YoSOyxJMVDQ?autoplay=1&mute=1"
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+
+          
+
+        </div>
+        <div class="__banner-atletic__">
+          <div class="-carousel-container-">
+            <div class="___navigation-">
+              <div class="prev nav-btn"><</div>
+              <div class="next nav-btn">></div>
+            </div>
+            <div class="___carousel-">
+              <div class="item main">
+                <a href="https://www.logitechstore.com.br/voce-gamer/mouses-g-pro?utm_source=hotsite_INTZ-logitech-g&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g
+               "> <img  class="banner-miranda"
+                  src="https://www.logitechstore.com.br/media/interface/files/minanda.png"
+                  alt="minanda"
+                /></a>
+               <a href="https://www.logitechstore.com.br/voce-gamer/mouses-g-pro?utm_source=INTZ-logitech-gr&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g
+               "> <img class="img-minanda-mobile"  src="https://www.logitechstore.com.br/media/interface/files/minanda-mobile_2.png"  alt=""></a>
+               
+                
+              </div>
+
+              <div class="item">
+                <a href="https://www.logitechstore.com.br/voce-gamer/headsets-g-pro?utm_source=hotsite_INTZ-logitech-g&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g
+                "> <img  class="banner-miranda"
+                   src="https://www.logitechstore.com.br/media/interface/files/banner-intz-4.jpg"
+                   alt="hauz"
+                 /></a>
+                <a href="https://www.logitechstore.com.br/voce-gamer/headsets-g-pro?utm_source=hotsite_INTZ-logitech-g&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g
+                "> <img class="img-minanda-mobile" src="https://www.logitechstore.com.br/media/interface/files/3-mobile_2.png" alt=""></a>
+                
+              </div>
+
+
+              <div class="item">
+                <a href="https://www.logitechstore.com.br/voce-gamer/teclados-g-pro?utm_source=hotsite_INTZ-logitech-gr&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g"> 
+                  <img class="banner-danviet"
+                    src="https://www.logitechstore.com.br/media/interface/files/banner-intz-3.jpg"
+                    alt="mountain"
+                  /></a>
+                 <a href="https://www.logitechstore.com.br/voce-gamer/teclados-g-pro?utm_source=hotsite_INTZ-logitech-g&utm_medium=LandingPage&utm_campaign=INTZ-logitech-g"> 
+                  <img class="img-danviet-mobile" src="https://www.logitechstore.com.br/media/interface/files/danviet-mobile_2.png" alt=""></a>
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="__banner-txt__">
+          <strong>
+            ESCOLHA DE EQUIPAMENTOS DOS PRINCIPAIS TIMES DE E-SPORTS DO MUNDO.
+          </strong>
+        </div>
+        <div class="__logotipo__box__">
+          <div class="__logo-footer__">
+            <div class="__logo__">
+              <img
+                class="__logo__intz"
+                src="https://www.logitechstore.com.br/media/interface/files/logotipo-intz.png"
+                alt=""
+              />
+            </div>
+
+            <div class="__logo__">
+              <img
+                class="__logo__natus__"
+                src="https://www.logitechstore.com.br/media/interface/files/logotipo-natus.png"
+                alt=""
+              />
+            </div>
+
+            <div class="__logo__">
+              <img
+                class="__logo__star__"
+                src="https://www.logitechstore.com.br/media/interface/files/logotipo-estrella.png"
+                alt=""
+              />
+            </div>
+
+            <div class="__logo__">
+              <img
+                class="__logo__sm__"
+                src="https://www.logitechstore.com.br/media/interface/files/logotipo-sm.png"
+                alt=""
+              />
+            </div>
+
+            <div class="__logo__">
+              <img
+                class="__logo__gs__"
+                src="https://www.logitechstore.com.br/media/interface/files/logotipo-gc.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="__logo__">
+            <img
+              class="__logo__logitech__g"
+              src="https://www.logitechstore.com.br/media/interface/files/logotipo-logitech.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="__footer-text__">
+          <span
+            > © 2021 Logitech. Logitech, Logitech G e os logotipos Logitech e Logitech G são marcas comerciais ou marcas registradas da Logitech Europe S.A. e/ou de suas filiais nos EUA e em outros países.</span
+          >
+        </div>
+
+        <div class="__footer__"></div>
+      </div>
+    </div>
+
+    <script>
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      const images = document.querySelector(".___carousel-").children;
+      const totalImages = images.length;
+      let index = 0;
+
+    
+
+      prev.addEventListener("click", () => {
+        nextImage("next");
+      });
+
+      next.addEventListener("click", () => {
+        nextImage("prev");
+      });
+
+      function nextImage(direction) {
+        if (direction == "next") {
+          index++;
+          if (index == totalImages) {
+            index = 0;
+          }
+        } else {
+          if (index == 0) {
+            index = totalImages - 1;
+          } else {
+            index--;
+          }
+        }
+
+        for (let i = 0; i < images.length; i++) {
+          images[i].classList.remove("main");
+        }
+        images[index].classList.add("main");
+      }
+    </script>
+  </body>
+</html>
